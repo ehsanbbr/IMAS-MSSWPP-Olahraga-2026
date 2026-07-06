@@ -209,6 +209,14 @@
     flex:0 0 auto;
   }
   .erow .time small, .drow .time small{display:block;font-size:9.5px;color:var(--grey);}
+  .result-note{
+    font-size:11px;margin-top:4px;font-weight:600;
+  }
+  .result-note.advanced{color:#6fd88a;}
+  .result-note.eliminated, .result-note.not-advanced{color:#8f9ab0;}
+  .result-note.nomark{color:#e3a93b;}
+  .erow.cancelled-row{opacity:0.55;}
+  .erow.cancelled-row .ename b{text-decoration:line-through;color:var(--grey);}
   .round{
     flex:0 0 auto;
     font-family:'JetBrains Mono',monospace;
@@ -432,14 +440,14 @@ const DAYS = [
 // day index 0-4
 const athletes = [
   { name:"Daniel", cat:"L10", events:[
-    {acara:106, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am"},
-    {acara:120, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.00 pm", masa:"12.20 pm"},
-    {acara:136, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.20 pm", masa:"3.40 pm"},
+    {acara:106, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am", result:{time:"16.26 s", place:"2nd in heat", status:"advanced"}},
+    {acara:120, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.00 pm", masa:"12.20 pm", result:{time:"15.95 s", place:"5th in semi", status:"eliminated"}},
+    {acara:136, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.20 pm", masa:"3.40 pm", cancelled:true},
   ]},
   { name:"Nael", cat:"L10", events:[
-    {acara:106, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am"},
-    {acara:120, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.00 pm", masa:"12.20 pm"},
-    {acara:136, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.20 pm", masa:"3.40 pm"},
+    {acara:106, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am", result:{time:"15.32 s", place:"2nd in heat", status:"advanced"}},
+    {acara:120, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.00 pm", masa:"12.20 pm", result:{time:"15.36 s", place:"3rd in semi", status:"eliminated"}},
+    {acara:136, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.20 pm", masa:"3.40 pm", cancelled:true},
     {acara:405, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am"},
     {acara:414, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.25 am", masa:"10.45 am"},
     {acara:423, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.20 pm", masa:"2.40 pm"},
@@ -450,14 +458,14 @@ const athletes = [
     {acara:423, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.20 pm", masa:"2.40 pm"},
   ]},
   { name:"Mareesa", cat:"P10", events:[
-    {acara:105, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.10 am", masa:"8.30 am"},
-    {acara:119, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"11.50 am", masa:"12.10 pm"},
-    {acara:135, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.10 pm", masa:"3.30 pm"},
+    {acara:105, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.10 am", masa:"8.30 am", result:{time:"18.71 s", place:"5th in heat", status:"eliminated"}},
+    {acara:119, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"11.50 am", masa:"12.10 pm", cancelled:true},
+    {acara:135, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.10 pm", masa:"3.30 pm", cancelled:true},
   ]},
   { name:"Qaseh", cat:"P12", events:[
-    {acara:107, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am"},
-    {acara:121, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.10 pm", masa:"12.30 pm"},
-    {acara:137, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.30 pm", masa:"3.50 pm"},
+    {acara:107, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am", result:{time:"15.54 s", place:"2nd in heat", status:"advanced"}},
+    {acara:121, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.10 pm", masa:"12.30 pm", result:{time:"15.75 s", place:"4th in semi", status:"eliminated"}},
+    {acara:137, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.30 pm", masa:"3.50 pm", cancelled:true},
     {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
     {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
     {acara:406, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am"},
@@ -473,19 +481,19 @@ const athletes = [
     {acara:504, day:4, event:"1200 Meter", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am"},
   ]},
   { name:"Najla", cat:"P12", events:[
-    {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am"},
+    {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"NM", place:"No mark recorded", status:"nomark"}},
     {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
     {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
   ]},
   { name:"Saara", cat:"P12", events:[
-    {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am"},
+    {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"NM", place:"No mark recorded", status:"nomark"}},
     {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
     {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
   ]},
   { name:"Syed Adam", cat:"L12", events:[
-    {acara:108, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am"},
-    {acara:122, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.20 pm", masa:"12.40 pm"},
-    {acara:138, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
+    {acara:108, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am", result:{time:"14.39 s", place:"5th in heat", status:"eliminated"}},
+    {acara:122, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.20 pm", masa:"12.40 pm", cancelled:true},
+    {acara:138, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
     {acara:407, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am"},
     {acara:416, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.55 am", masa:"11.15 am"},
     {acara:425, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"3.00 pm", masa:"3.20 pm"},
@@ -513,17 +521,32 @@ athletesSorted.forEach((a,i)=>{
   card.className = 'athlete';
   card.id = id;
 
-  const rows = a.events.map(e => `
+  const rows = a.events.map(e => {
+    if(e.cancelled){
+      return `
+    <div class="erow cancelled-row">
+      <div class="acara-tag">#${e.acara}</div>
+      <div class="ename">
+        <b>${e.event}</b>
+        <div class="day">${DAYS[e.day].label.split(' · ')[0]} · ${DAYS[e.day].label.split('· ')[1]}</div>
+        <div class="result-note not-advanced">Did not qualify from heats — not competing</div>
+      </div>
+    </div>`;
+    }
+    const resultHtml = e.result ? `
+        <div class="result-note ${e.result.status}">${e.result.status==='advanced' ? '✓ Advanced' : e.result.status==='nomark' ? 'ⓘ Final Result' : '✗ Eliminated'} · ${e.result.time} (${e.result.place})</div>` : '';
+    return `
     <div class="erow">
       <div class="acara-tag">#${e.acara}</div>
       <div class="ename">
         <b>${e.event}</b>
         <div class="day">${DAYS[e.day].label.split(' · ')[0]} · ${DAYS[e.day].label.split('· ')[1]}</div>
+        ${resultHtml}
       </div>
       <div class="round ${e.round}">${e.roundLabel}</div>
       <div class="time">${e.masa}<small>lapor ${e.lapor}</small></div>
-    </div>
-  `).join('');
+    </div>`;
+  }).join('');
 
   card.innerHTML = `
     <div class="athlete-head">
