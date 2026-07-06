@@ -294,6 +294,29 @@
     font-size:12.5px;color:#C9D2E3;line-height:1.6;margin:8px 0 0;
   }
   .info-note b{color:var(--chalk);}
+  .record-card{
+    background:var(--navy-2);
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:16px 16px 14px;
+    margin-bottom:14px;
+  }
+  .record-card h4{
+    font-family:'Oswald',sans-serif;
+    text-transform:uppercase;
+    font-size:14.5px;letter-spacing:.02em;
+    margin:0 0 10px;color:var(--chalk);
+  }
+  .rec-row{
+    display:flex;flex-direction:column;gap:2px;
+    padding:8px 10px;margin-bottom:6px;
+    border-radius:8px;
+    background:rgba(255,255,255,0.03);
+  }
+  .rec-row.highlight{background:rgba(227,169,59,0.12);border:1px solid rgba(227,169,59,0.3);}
+  .rec-row span{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--grey);}
+  .rec-row b{font-size:13px;color:var(--chalk);font-weight:600;}
+  .rec-row.highlight b{color:var(--gold);}
   .rrow{
     display:flex;justify-content:space-between;gap:10px;
     padding:8px 10px;margin-top:6px;
@@ -333,6 +356,7 @@
   <div class="tabs">
     <button class="tab active" data-tab="athlete">By Child</button>
     <button class="tab" data-tab="day">By Day</button>
+    <button class="tab" data-tab="records">Records</button>
     <button class="tab" data-tab="info">Event Day Info</button>
   </div>
 
@@ -351,6 +375,53 @@
   <!-- ================= BY DAY ================= -->
   <div class="view" id="view-day">
     <div id="day-list"></div>
+  </div>
+
+  <!-- ================= RECORDS ================= -->
+  <div class="view" id="view-records">
+    <p class="info-note" style="margin:0 0 14px;">Comparing IMAS athletes' categories against the all-time MSSWPP meet record and this year's (2026) leading mark so far, based on the result sheets shared. Updated as more results come in.</p>
+
+    <div class="record-card">
+      <h4>100m — L10 (Lelaki 10)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>Not available from sheets shared</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>14.54 s — Anas Haqeem Bin Supian (SKPP 8(1))</b></div>
+      <p class="info-note">IMAS: Daniel 16.26s (heat), Nael 15.32s (heat) — both eliminated in semis.</p>
+    </div>
+
+    <div class="record-card">
+      <h4>100m — P10 (Perempuan 10)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>Not available from sheets shared</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (heat stage)</span><b>16.16 s — Adra Qalisya Binti Mohd Sabidi (SKPP 16(1))</b></div>
+      <p class="info-note">⚠️ Her semifinal sheet shows 12.53s, which looks like a likely typo in the official document rather than a real result — worth confirming with the official results before treating as accurate.</p>
+      <p class="info-note">IMAS: Mareesa 18.71s (heat) — eliminated, did not advance.</p>
+    </div>
+
+    <div class="record-card">
+      <h4>100m — P12 (Perempuan 12)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>13.40 s — Zara Sofea Binti Mohd Sabidi (SKPP 16(1), 2025)</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>13.48 s — Adrina Binti Muhammad Aminuddin (SKPP 14(1))</b></div>
+      <p class="info-note">Only 0.08s off the all-time record — one to watch in the final!</p>
+      <p class="info-note">IMAS: Qaseh 15.54s (heat), 15.75s (semi) — eliminated in semis.</p>
+    </div>
+
+    <div class="record-card">
+      <h4>100m — L12 (Lelaki 12)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>12.52 s — Shareef Ikhsan (SKPP 16(2), 2025)</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>13.02 s — Muhammad Rayyan Adib Bin Niqman Albali (SKPP 14(1))</b></div>
+      <p class="info-note">IMAS: Syed Adam 14.39s (heat) — eliminated, did not advance.</p>
+    </div>
+
+    <div class="record-card">
+      <h4>Lompat Tinggi (High Jump) — P12</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>1.30 m — Puteri Aina Zulaikha Binti Ahmad (SKPP 5(1), 2025)</b></div>
+      <div class="rec-row highlight"><span>2026 Result (Final, complete)</span><b>1.26 m — Aisyah Marissa Binti Mohd Faiz (SKPP 9(2))</b></div>
+      <p class="info-note">IMAS: Najla and Saara both recorded NM (no mark) — did not clear the opening height.</p>
+    </div>
+
+    <div class="record-card" style="opacity:0.7;">
+      <h4>200m (L10 / P12 / L12), 1200m (P12), 4×100m Relay (P12)</h4>
+      <p class="info-note">Not yet contested as of the sheets shared so far. We'll add records and this year's leading marks here once those results come in.</p>
+    </div>
   </div>
 
   <!-- ================= EVENT DAY INFO ================= -->
