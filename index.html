@@ -317,6 +317,23 @@
   .rec-row span{font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;color:var(--grey);}
   .rec-row b{font-size:13px;color:var(--chalk);font-weight:600;}
   .rec-row.highlight b{color:var(--gold);}
+  .rank-table{
+    width:100%;border-collapse:collapse;margin-top:12px;font-size:12px;
+  }
+  .rank-table th{
+    text-align:left;font-family:'JetBrains Mono',monospace;
+    font-size:9.5px;text-transform:uppercase;letter-spacing:.04em;
+    color:var(--grey);padding:6px 6px;border-bottom:1px solid var(--line);
+  }
+  .rank-table td{
+    padding:7px 6px;border-bottom:1px solid rgba(255,255,255,0.05);
+    color:var(--chalk);font-family:'JetBrains Mono',monospace;
+  }
+  .rank-table tr.imas-row{background:rgba(181,67,43,0.18);}
+  .rank-table tr.imas-row td{font-weight:700;color:var(--gold);}
+  .rank-table td.st-q{color:#6fd88a;font-weight:700;}
+  .rank-table td.st-out{color:var(--grey);}
+  .legend-note{font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.5;}
   .rrow{
     display:flex;justify-content:space-between;gap:10px;
     padding:8px 10px;margin-top:6px;
@@ -386,6 +403,30 @@
       <div class="rec-row"><span>All-time MSSWPP Record</span><b>Not available from sheets shared</b></div>
       <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>14.54 s — Anas Haqeem Bin Supian (SKPP 8(1))</b></div>
       <p class="info-note">IMAS: Daniel 16.26s (heat), Nael 15.32s (heat) — both eliminated in semis.</p>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>L-016 · SKPP 8(1)</td><td>1</td><td>14.54 s</td><td class="st-q">Q</td></tr>
+          <tr><td>2</td><td>S-017 · SKPP 11(2)</td><td>3</td><td>14.91 s</td><td class="st-q">Q</td></tr>
+          <tr><td>3</td><td>Y-014 · SKPP 18(1)</td><td>3</td><td>15.14 s</td><td class="st-q">q</td></tr>
+          <tr><td>4</td><td>R-001 · SKPP 11(1)</td><td>1</td><td>15.15 s</td><td class="st-q">q</td></tr>
+          <tr><td>5</td><td>U-006 · SKPP 14(1)</td><td>2</td><td>15.23 s</td><td class="st-q">Q</td></tr>
+          <tr class="divider"><td>6</td><td>Z-016 · SKPP 5(1)</td><td>2</td><td>15.32 s</td><td class="st-q">q</td></tr>
+          <tr><td>7</td><td>M-013 · SKPP 8(2)</td><td>1</td><td>15.32 s</td><td class="st-out">—</td></tr>
+          <tr class="imas-row"><td>8</td><td>Nael · IMAS (R)</td><td>2</td><td>15.36 s</td><td class="st-out">—</td></tr>
+          <tr><td>9</td><td>V-001 · SKPP 16(1)</td><td>1</td><td>15.37 s</td><td class="st-out">—</td></tr>
+          <tr><td>10</td><td>P-001 · SKPP 9(2)</td><td>3</td><td>15.41 s</td><td class="st-out">—</td></tr>
+          <tr><td>11</td><td>M-012 · SKPP 8(2)</td><td>2</td><td>15.45 s</td><td class="st-out">—</td></tr>
+          <tr><td>12</td><td>T-021 · SKPP 11(3)</td><td>3</td><td>15.47 s</td><td class="st-out">—</td></tr>
+          <tr><td>13</td><td>Z-015 · SKPP 5(1)</td><td>3</td><td>15.63 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>N-011 · SKPP 9(1)</td><td>3</td><td>15.89 s</td><td class="st-out">—</td></tr>
+          <tr class="imas-row"><td>15</td><td>Daniel · IMAS (R)</td><td>1</td><td>15.95 s</td><td class="st-out">—</td></tr>
+          <tr><td>16</td><td>Y-015 · SKPP 18(1)</td><td>2</td><td>16.01 s</td><td class="st-out">—</td></tr>
+          <tr><td>17</td><td>AA013 · SKPP 17(1)</td><td>2</td><td>16.02 s</td><td class="st-out">—</td></tr>
+          <tr><td>18</td><td>W-015 · SKPP 16(2)</td><td>1</td><td>16.24 s</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+      <div class="legend-note">Top 6 (above gold line) advance to Final #136.</div>
     </div>
 
     <div class="record-card">
@@ -393,7 +434,31 @@
       <div class="rec-row"><span>All-time MSSWPP Record</span><b>Not available from sheets shared</b></div>
       <div class="rec-row highlight"><span>2026 Leader (heat stage)</span><b>16.16 s — Adra Qalisya Binti Mohd Sabidi (SKPP 16(1))</b></div>
       <p class="info-note">⚠️ Her semifinal sheet shows 12.53s, which looks like a likely typo in the official document rather than a real result — worth confirming with the official results before treating as accurate.</p>
-      <p class="info-note">IMAS: Mareesa 18.71s (heat) — eliminated, did not advance.</p>
+      <p class="info-note">IMAS: Mareesa 18.71s (heat) — eliminated in heats, not present in this semifinal round.</p>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>V-031 · SKPP 16(1)</td><td>1</td><td>12.53 s ⚠️</td><td class="st-q">Q</td></tr>
+          <tr><td>2</td><td>Y-015 · SKPP 18(1)</td><td>2</td><td>15.79 s</td><td class="st-q">Q</td></tr>
+          <tr><td>3</td><td>S-012 · SKPP 11(2)</td><td>3</td><td>16.13 s</td><td class="st-q">Q</td></tr>
+          <tr><td>4</td><td>U-001 · SKPP 14(1)</td><td>1</td><td>16.16 s</td><td class="st-q">q</td></tr>
+          <tr><td>5</td><td>U-002 · SKPP 14(1)</td><td>2</td><td>16.60 s</td><td class="st-q">q</td></tr>
+          <tr class="divider"><td>6</td><td>R-001 · SKPP 11(1)</td><td>2</td><td>16.62 s</td><td class="st-q">q</td></tr>
+          <tr><td>7</td><td>L-033 · SKPP 8(1)</td><td>1</td><td>16.64 s</td><td class="st-out">—</td></tr>
+          <tr><td>8</td><td>X-004 · SKPP 18(2)</td><td>2</td><td>16.83 s</td><td class="st-out">—</td></tr>
+          <tr><td>9</td><td>N-004 · SKPP 9(1)</td><td>2</td><td>16.97 s</td><td class="st-out">—</td></tr>
+          <tr><td>10</td><td>T-022 · SKPP 11(3)</td><td>3</td><td>16.98 s</td><td class="st-out">—</td></tr>
+          <tr><td>11</td><td>Y-016 · SKPP 18(1)</td><td>3</td><td>16.99 s</td><td class="st-out">—</td></tr>
+          <tr><td>12</td><td>AD019 · SKPP 8(3)</td><td>2</td><td>17.01 s</td><td class="st-out">—</td></tr>
+          <tr><td>13</td><td>R-002 · SKPP 11(1)</td><td>1</td><td>17.10 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>AA021 · SKPP 17(1)</td><td>3</td><td>17.16 s</td><td class="st-out">—</td></tr>
+          <tr><td>15</td><td>S-011 · SKPP 11(2)</td><td>1</td><td>17.20 s</td><td class="st-out">—</td></tr>
+          <tr><td>16</td><td>AG004 · SIRAJ AIM</td><td>1</td><td>17.37 s</td><td class="st-out">—</td></tr>
+          <tr><td>17</td><td>V-032 · SKPP 16(1)</td><td>3</td><td>17.67 s</td><td class="st-out">—</td></tr>
+          <tr><td>18</td><td>W-001 · SKPP 16(2)</td><td>3</td><td>17.72 s</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+      <div class="legend-note">Top 6 (above gold line) advance to Final #135. No IMAS athlete in this round.</div>
     </div>
 
     <div class="record-card">
@@ -402,13 +467,61 @@
       <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>13.48 s — Adrina Binti Muhammad Aminuddin (SKPP 14(1))</b></div>
       <p class="info-note">Only 0.08s off the all-time record — one to watch in the final!</p>
       <p class="info-note">IMAS: Qaseh 15.54s (heat), 15.75s (semi) — eliminated in semis.</p>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>U-001 · SKPP 14(1)</td><td>1</td><td>13.48 s</td><td class="st-q">Q</td></tr>
+          <tr><td>2</td><td>U-002 · SKPP 14(1)</td><td>2</td><td>14.17 s</td><td class="st-q">Q</td></tr>
+          <tr><td>3</td><td>S-002 · SKPP 11(2)</td><td>2</td><td>14.46 s</td><td class="st-q">q</td></tr>
+          <tr><td>4</td><td>S-001 · SKPP 11(2)</td><td>3</td><td>14.94 s</td><td class="st-q">Q</td></tr>
+          <tr><td>5</td><td>T-001 · SKPP 11(3)</td><td>1</td><td>15.08 s</td><td class="st-q">q</td></tr>
+          <tr class="divider"><td>6</td><td>V-001 · SKPP 16(1)</td><td>3</td><td>15.35 s</td><td class="st-q">q</td></tr>
+          <tr><td>7</td><td>P-007 · SKPP 9(2)</td><td>3</td><td>15.50 s</td><td class="st-out">—</td></tr>
+          <tr><td>8</td><td>Z-003 · SKPP 5(1)</td><td>2</td><td>15.64 s</td><td class="st-out">—</td></tr>
+          <tr><td>9</td><td>N-001 · SKPP 9(1)</td><td>1</td><td>15.75 s</td><td class="st-out">—</td></tr>
+          <tr class="imas-row"><td>9</td><td>Qaseh · IMAS (R)</td><td>2</td><td>15.75 s</td><td class="st-out">—</td></tr>
+          <tr><td>11</td><td>W-005 · SKPP 16(2)</td><td>3</td><td>15.77 s</td><td class="st-out">—</td></tr>
+          <tr><td>12</td><td>L-021 · SKPP 8(1)</td><td>3</td><td>15.99 s</td><td class="st-out">—</td></tr>
+          <tr><td>13</td><td>Y-001 · SKPP 18(1)</td><td>1</td><td>16.01 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>Z-001 · SKPP 5(1)</td><td>1</td><td>16.22 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>AA011 · SKPP 17(1)</td><td>2</td><td>16.22 s</td><td class="st-out">—</td></tr>
+          <tr><td>16</td><td>AG004 · SIRAJ AIM</td><td>2</td><td>16.32 s</td><td class="st-out">—</td></tr>
+          <tr><td>17</td><td>AF017 · SKPP 15(1)</td><td>3</td><td>16.42 s</td><td class="st-out">—</td></tr>
+          <tr><td>—</td><td>R-006 · SKPP 11(1)</td><td>1</td><td>BATAL</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+      <div class="legend-note">Top 6 (above gold line) advance to Final #137. BATAL = scratched/withdrew.</div>
     </div>
 
     <div class="record-card">
       <h4>100m — L12 (Lelaki 12)</h4>
       <div class="rec-row"><span>All-time MSSWPP Record</span><b>12.52 s — Shareef Ikhsan (SKPP 16(2), 2025)</b></div>
       <div class="rec-row highlight"><span>2026 Leader (after semis)</span><b>13.02 s — Muhammad Rayyan Adib Bin Niqman Albali (SKPP 14(1))</b></div>
-      <p class="info-note">IMAS: Syed Adam 14.39s (heat) — eliminated, did not advance.</p>
+      <p class="info-note">IMAS: Syed Adam 14.39s (heat) — eliminated in heats, not present in this semifinal round.</p>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>U-001 · SKPP 14(1)</td><td>1</td><td>13.02 s</td><td class="st-q">Q</td></tr>
+          <tr><td>2</td><td>Y-001 · SKPP 18(1)</td><td>1</td><td>13.10 s</td><td class="st-q">q</td></tr>
+          <tr><td>3</td><td>AD002 · SKPP 8(3)</td><td>2</td><td>13.39 s</td><td class="st-q">Q</td></tr>
+          <tr><td>4</td><td>S-022 · SKPP 11(2)</td><td>1</td><td>13.54 s</td><td class="st-q">q</td></tr>
+          <tr><td>5</td><td>U-002 · SKPP 14(1)</td><td>3</td><td>13.87 s</td><td class="st-q">Q</td></tr>
+          <tr class="divider"><td>6</td><td>M-001 · SKPP 8(2)</td><td>2</td><td>13.90 s</td><td class="st-q">q</td></tr>
+          <tr><td>7</td><td>M-002 · SKPP 8(2)</td><td>3</td><td>13.94 s</td><td class="st-out">—</td></tr>
+          <tr><td>8</td><td>N-001 · SKPP 9(1)</td><td>3</td><td>14.00 s</td><td class="st-out">—</td></tr>
+          <tr><td>9</td><td>V-008 · SKPP 16(1)</td><td>3</td><td>14.01 s</td><td class="st-out">—</td></tr>
+          <tr><td>10</td><td>R-004 · SKPP 11(1)</td><td>2</td><td>14.03 s</td><td class="st-out">—</td></tr>
+          <tr><td>11</td><td>P-005 · SKPP 9(2)</td><td>3</td><td>14.12 s</td><td class="st-out">—</td></tr>
+          <tr><td>12</td><td>Y-002 · SKPP 18(1)</td><td>2</td><td>14.14 s</td><td class="st-out">—</td></tr>
+          <tr><td>13</td><td>N-007 · SKPP 9(1)</td><td>2</td><td>14.17 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>AA003 · SKPP 17(1)</td><td>1</td><td>14.28 s</td><td class="st-out">—</td></tr>
+          <tr><td>15</td><td>W-001 · SKPP 16(2)</td><td>3</td><td>14.31 s</td><td class="st-out">—</td></tr>
+          <tr><td>16</td><td>V-009 · SKPP 16(1)</td><td>1</td><td>14.36 s</td><td class="st-out">—</td></tr>
+          <tr><td>17</td><td>AF002 · SKPP 15(1)</td><td>1</td><td>14.56 s</td><td class="st-out">—</td></tr>
+          <tr><td>18</td><td>S-021 · SKPP 11(2)</td><td>2</td><td>14.59 s</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+      <div class="legend-note">Top 6 (above gold line) advance to Final #138. No IMAS athlete in this round.</div>
     </div>
 
     <div class="record-card">
@@ -418,8 +531,41 @@
       <p class="info-note">IMAS: Najla and Saara both recorded NM (no mark) — did not clear the opening height.</p>
     </div>
 
+    <div class="record-card">
+      <h4>4×100m Relay — P12 (Perempuan 12)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>58.24 s — SK Putrajaya Presint 16(1) (2025)</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (after semis) — NEW RECORD</span><b>57.34 s — SKPP 14(1) (broke the 2025 record!)</b></div>
+      <p class="info-note">Final qualifiers (top 6): SKPP 14(1) 57.34s, SKPP 11(2) 58.39s, SKPP 16(1) 61.30s, SKPP 5(1) 61.66s, SKPP 18(1) 61.90s, SKPP 8(1) 62.44s.</p>
+      <p class="info-note">IMAS (Qaseh, Kayla, Najla, Saara): 65.69s — finished 13th of 17 teams, eliminated in semis.</p>
+
+      <table class="rank-table">
+        <thead>
+          <tr><th>#</th><th>Team</th><th>Heat</th><th>Time</th><th>Status</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>SKPP 14(1)</td><td>1</td><td>57.34 s</td><td class="st-q">Q · RB</td></tr>
+          <tr><td>2</td><td>SKPP 11(2)</td><td>2</td><td>58.39 s</td><td class="st-q">Q</td></tr>
+          <tr><td>3</td><td>SKPP 16(1)</td><td>3</td><td>61.30 s</td><td class="st-q">Q</td></tr>
+          <tr><td>4</td><td>SKPP 5(1)</td><td>3</td><td>61.66 s</td><td class="st-q">q</td></tr>
+          <tr><td>5</td><td>SKPP 18(1)</td><td>2</td><td>61.90 s</td><td class="st-q">q</td></tr>
+          <tr><td>6</td><td>SKPP 8(1)</td><td>1</td><td>62.44 s</td><td class="st-q">q</td></tr>
+          <tr><td>7</td><td>SKPP 9(2)</td><td>1</td><td>62.48 s</td><td class="st-out">—</td></tr>
+          <tr><td>8</td><td>SKPP 11(3)</td><td>1</td><td>63.22 s</td><td class="st-out">—</td></tr>
+          <tr><td>9</td><td>SKPP 16(2)</td><td>1</td><td>63.62 s</td><td class="st-out">—</td></tr>
+          <tr><td>10</td><td>SKPP 9(1)</td><td>2</td><td>64.23 s</td><td class="st-out">—</td></tr>
+          <tr><td>11</td><td>SIRAJ AIM</td><td>2</td><td>64.38 s</td><td class="st-out">—</td></tr>
+          <tr><td>12</td><td>SKPP 15(1)</td><td>3</td><td>64.43 s</td><td class="st-out">—</td></tr>
+          <tr class="imas-row"><td>13</td><td>IMAS (R)</td><td>2</td><td>65.69 s</td><td class="st-out">—</td></tr>
+          <tr><td>14</td><td>SKPP 17(1)</td><td>1</td><td>66.71 s</td><td class="st-out">—</td></tr>
+          <tr><td>15</td><td>SKPP 11(1)</td><td>3</td><td>67.55 s</td><td class="st-out">—</td></tr>
+          <tr><td>16</td><td>AR RAUDHAH</td><td>2</td><td>69.80 s</td><td class="st-out">—</td></tr>
+          <tr><td>17</td><td>SKPP 8(3)</td><td>3</td><td>70.68 s</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <div class="record-card" style="opacity:0.7;">
-      <h4>200m (L10 / P12 / L12), 1200m (P12), 4×100m Relay (P12)</h4>
+      <h4>200m (L10 / P12 / L12), 1200m (P12)</h4>
       <p class="info-note">Not yet contested as of the sheets shared so far. We'll add records and this year's leading marks here once those results come in.</p>
     </div>
   </div>
@@ -537,15 +683,15 @@ const athletes = [
     {acara:107, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am", result:{time:"15.54 s", place:"2nd in heat", status:"advanced"}},
     {acara:121, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.10 pm", masa:"12.30 pm", result:{time:"15.75 s", place:"4th in semi", status:"eliminated"}},
     {acara:137, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.30 pm", masa:"3.50 pm", cancelled:true},
-    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
-    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
+    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am", result:{time:"65.69 s", place:"5th in semi", status:"eliminated"}},
+    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
     {acara:406, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am"},
     {acara:415, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.40 am", masa:"11.00 am"},
     {acara:424, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.30 pm", masa:"2.50 pm"},
   ]},
   { name:"Kayla", cat:"P12", events:[
-    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
-    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
+    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am", result:{time:"65.69 s", place:"5th in semi", status:"eliminated"}},
+    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
     {acara:406, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am"},
     {acara:415, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.40 am", masa:"11.00 am"},
     {acara:424, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.30 pm", masa:"2.50 pm"},
@@ -553,13 +699,13 @@ const athletes = [
   ]},
   { name:"Najla", cat:"P12", events:[
     {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"NM", place:"No mark recorded", status:"nomark"}},
-    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
-    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
+    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am", result:{time:"65.69 s", place:"5th in semi", status:"eliminated"}},
+    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
   ]},
   { name:"Saara", cat:"P12", events:[
     {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"NM", place:"No mark recorded", status:"nomark"}},
-    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am"},
-    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm"},
+    {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am", result:{time:"65.69 s", place:"5th in semi", status:"eliminated"}},
+    {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
   ]},
   { name:"Syed Adam", cat:"L12", events:[
     {acara:108, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am", result:{time:"14.39 s", place:"5th in heat", status:"eliminated"}},
@@ -600,7 +746,7 @@ athletesSorted.forEach((a,i)=>{
       <div class="ename">
         <b>${e.event}</b>
         <div class="day">${DAYS[e.day].label.split(' · ')[0]} · ${DAYS[e.day].label.split('· ')[1]}</div>
-        <div class="result-note not-advanced">Did not qualify from heats — not competing</div>
+        <div class="result-note not-advanced">Did not advance from earlier round — not competing</div>
       </div>
     </div>`;
     }
