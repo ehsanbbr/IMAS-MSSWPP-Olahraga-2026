@@ -215,6 +215,9 @@
   .result-note.advanced{color:#6fd88a;}
   .result-note.eliminated, .result-note.not-advanced{color:#8f9ab0;}
   .result-note.nomark{color:#e3a93b;}
+  .result-note.medal{color:#FFD700;font-size:12px;font-weight:800;}
+  .result-note.medal-detail{color:#FFD700;font-weight:700;}
+  .erow:has(.result-note.medal){background:rgba(255,215,0,0.08);border-radius:8px;}
   .erow.cancelled-row{opacity:0.55;}
   .erow.cancelled-row .ename b{text-decoration:line-through;color:var(--grey);}
   .round{
@@ -612,9 +615,9 @@
     <div class="record-card">
       <h4>200m — P12 (Perempuan 12)</h4>
       <div class="rec-row"><span>All-time MSSWPP Record</span><b>28.07 s — Zara Sofea Binti Mohd Sabidi (SKPP 16(1), 2025)</b></div>
-      <div class="rec-row highlight"><span>2026 Leader (heat stage) — NEW RECORD</span><b>27.99 s — Adrina Binti Muhammad Aminuddin (SKPP 14(1))</b></div>
-      <p class="info-note">Adrina broke the 2025 meet record by 0.08s in the heats!</p>
-      <p class="info-note">IMAS: Kayla 29.93s — 1st in heat, 3rd overall, advanced to semifinal (#415). Qaseh 34.13s — eliminated, does not advance.</p>
+      <div class="rec-row highlight"><span>2026 Champion — NEW RECORD</span><b>28.02 s — Adrina Binti Muhammad Aminuddin (SKPP 14(1))</b></div>
+      <p class="info-note">Adrina broke the 2025 meet record in the heats (27.99s) and again in the final (28.02s)!</p>
+      <p class="info-note">🥉 <b>IMAS: Kayla won BRONZE!</b> 29.93s (heat, 1st) → 30.30s (semi, 1st) → <b>30.41s (Final, 3rd place)</b>. Qaseh 34.13s — eliminated in heats.</p>
       <table class="rank-table">
         <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
         <tbody>
@@ -658,8 +661,53 @@
       <div class="legend-note">12 automatic qualifiers (2 per heat, Q) + 6 fastest-losers (q) = 18 advance to semifinal #415. Kayla qualified directly as heat winner; Qaseh missed the cutoff by 0.39s.</div>
     </div>
 
+    <div class="record-card">
+      <h4>200m — L12 (Lelaki 12)</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>26.36 s — Shareef Ikhsan (SKPP 16(2), 2025)</b></div>
+      <div class="rec-row highlight"><span>2026 Leader (heat stage)</span><b>27.27 s — Muhammad Rayyan Adib Bin Niqman Albali (SKPP 14(1))</b></div>
+      <p class="info-note">IMAS: Syed Adam 30.98s — 4th in heat, eliminated in heats, does not advance.</p>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>U-001 · SKPP 14(1)</td><td>1</td><td>27.27 s</td><td class="st-q">Q</td></tr>
+          <tr><td>2</td><td>S-022 · SKPP 11(2)</td><td>5</td><td>27.28 s</td><td class="st-q">Q</td></tr>
+          <tr><td>3</td><td>AD002 · SKPP 8(3)</td><td>3</td><td>28.24 s</td><td class="st-q">Q</td></tr>
+          <tr><td>4</td><td>U-002 · SKPP 14(1)</td><td>6</td><td>28.39 s</td><td class="st-q">Q</td></tr>
+          <tr><td>5</td><td>Y-001 · SKPP 18(1)</td><td>5</td><td>28.51 s</td><td class="st-q">Q</td></tr>
+          <tr><td>6</td><td>T-011 · SKPP 11(3)</td><td>2</td><td>28.84 s</td><td class="st-q">Q</td></tr>
+          <tr><td>7</td><td>M-001 · SKPP 8(2)</td><td>1</td><td>28.87 s</td><td class="st-q">Q</td></tr>
+          <tr><td>8</td><td>T-010 · SKPP 11(3)</td><td>3</td><td>29.02 s</td><td class="st-q">Q</td></tr>
+          <tr><td>9</td><td>S-023 · SKPP 11(2)</td><td>6</td><td>29.04 s</td><td class="st-q">Q</td></tr>
+          <tr><td>10</td><td>V-010 · SKPP 16(1)</td><td>1</td><td>29.17 s</td><td class="st-q">q</td></tr>
+          <tr><td>11</td><td>AF013 · SKPP 15(1)</td><td>1</td><td>29.20 s</td><td class="st-q">q</td></tr>
+          <tr><td>12</td><td>AA003 · SKPP 17(1)</td><td>3</td><td>29.35 s</td><td class="st-q">q</td></tr>
+          <tr><td>13</td><td>L-001 · SKPP 8(1)</td><td>3</td><td>29.67 s</td><td class="st-q">q</td></tr>
+          <tr><td>14</td><td>Z-001 · SKPP 5(1)</td><td>4</td><td>29.68 s</td><td class="st-q">Q</td></tr>
+          <tr><td>15</td><td>N-007 · SKPP 9(1)</td><td>5</td><td>29.78 s</td><td class="st-q">q</td></tr>
+          <tr><td>16</td><td>W-003 · SKPP 16(2)</td><td>2</td><td>29.88 s</td><td class="st-q">Q</td></tr>
+          <tr class="divider"><td>17</td><td>L-004 · SKPP 8(1)</td><td>2</td><td>30.27 s</td><td class="st-q">q</td></tr>
+          <tr><td>18</td><td>Y-002 · SKPP 18(1)</td><td>6</td><td>30.35 s</td><td class="st-out">—</td></tr>
+          <tr><td>19</td><td>M-003 · SKPP 8(2)</td><td>4</td><td>30.39 s</td><td class="st-q">Q</td></tr>
+          <tr><td>20</td><td>AD004 · SKPP 8(3)</td><td>2</td><td>30.53 s</td><td class="st-out">—</td></tr>
+          <tr><td>21</td><td>R-007 · SKPP 11(1)</td><td>6</td><td>30.68 s</td><td class="st-out">—</td></tr>
+          <tr><td>22</td><td>R-010 · SKPP 11(1)</td><td>3</td><td>30.80 s</td><td class="st-out">—</td></tr>
+          <tr><td>23</td><td>N-008 · SKPP 9(1)</td><td>2</td><td>30.94 s</td><td class="st-out">—</td></tr>
+          <tr class="imas-row"><td>24</td><td>Syed Adam · IMAS (R)</td><td>5</td><td>30.98 s</td><td class="st-out">—</td></tr>
+          <tr><td>25</td><td>V-014 · SKPP 16(1)</td><td>5</td><td>31.47 s</td><td class="st-out">—</td></tr>
+          <tr><td>26</td><td>AG002 · SIRAJ AIM</td><td>4</td><td>31.48 s</td><td class="st-out">—</td></tr>
+          <tr><td>27</td><td>AG001 · SIRAJ AIM</td><td>1</td><td>31.57 s</td><td class="st-out">—</td></tr>
+          <tr><td>28</td><td>X-011 · SKPP 18(2)</td><td>1</td><td>31.80 s</td><td class="st-out">—</td></tr>
+          <tr><td>29</td><td>Z-002 · SKPP 5(1)</td><td>6</td><td>32.03 s</td><td class="st-out">—</td></tr>
+          <tr><td>30</td><td>X-019 · SKPP 18(2)</td><td>4</td><td>32.22 s</td><td class="st-out">—</td></tr>
+          <tr><td>31</td><td>P-012 · SKPP 9(2)</td><td>6</td><td>32.40 s</td><td class="st-out">—</td></tr>
+          <tr><td>32</td><td>P-014 · SKPP 9(2)</td><td>4</td><td>34.54 s</td><td class="st-out">—</td></tr>
+        </tbody>
+      </table>
+      <div class="legend-note">12 automatic qualifiers (2 per heat, Q — including heat winners like M-003 regardless of overall time rank) + 6 fastest-losers (q) = 18 advance to semifinal #416. Syed Adam missed the cutoff by 0.71s.</div>
+    </div>
+
     <div class="record-card" style="opacity:0.7;">
-      <h4>200m (L12), 1200m (P12)</h4>
+      <h4>1200m (P12)</h4>
       <p class="info-note">Not yet contested as of the sheets shared so far. We'll add records and this year's leading marks here once those results come in.</p>
     </div>
   </div>
@@ -760,8 +808,8 @@ const athletes = [
     {acara:120, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.00 pm", masa:"12.20 pm", result:{time:"15.36 s", place:"3rd in semi", status:"eliminated"}},
     {acara:136, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.20 pm", masa:"3.40 pm", cancelled:true},
     {acara:405, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am", result:{time:"32.79 s", place:"1st in heat", status:"advanced"}},
-    {acara:414, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.25 am", masa:"10.45 am"},
-    {acara:423, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.20 pm", masa:"2.40 pm"},
+    {acara:414, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.25 am", masa:"10.45 am", result:{time:"33.24 s", place:"5th in semi", status:"eliminated"}},
+    {acara:423, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.20 pm", masa:"2.40 pm", cancelled:true},
   ]},
   { name:"Abraham", cat:"L10", events:[
     {acara:405, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.25 am", masa:"8.45 am", result:{time:"34.31 s", place:"3rd in heat", status:"eliminated"}},
@@ -787,8 +835,8 @@ const athletes = [
     {acara:311, day:2, event:"4×100 Meter Relay", round:"semi", roundLabel:"Sep.Akhir", lapor:"9.30 am", masa:"9.50 am", result:{time:"65.69 s", place:"5th in semi", status:"eliminated"}},
     {acara:330, day:2, event:"4×100 Meter Relay", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
     {acara:406, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am", result:{time:"29.93 s", place:"1st in heat", status:"advanced"}},
-    {acara:415, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.40 am", masa:"11.00 am"},
-    {acara:424, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.30 pm", masa:"2.50 pm"},
+    {acara:415, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.40 am", masa:"11.00 am", result:{time:"30.30 s", place:"1st in semi", status:"advanced"}},
+    {acara:424, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.30 pm", masa:"2.50 pm", result:{time:"30.41 s", place:"🥉 3rd place — BRONZE MEDAL", status:"medal"}},
     {acara:504, day:4, event:"1200 Meter", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am"},
   ]},
   { name:"Najla", cat:"P12", events:[
@@ -805,9 +853,9 @@ const athletes = [
     {acara:108, day:0, event:"100 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am", result:{time:"14.39 s", place:"5th in heat", status:"eliminated"}},
     {acara:122, day:0, event:"100 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"12.20 pm", masa:"12.40 pm", cancelled:true},
     {acara:138, day:0, event:"100 Meter", round:"final", roundLabel:"Akhir", lapor:"3.40 pm", masa:"4.00 pm", cancelled:true},
-    {acara:407, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am"},
-    {acara:416, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.55 am", masa:"11.15 am"},
-    {acara:425, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"3.00 pm", masa:"3.20 pm"},
+    {acara:407, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.55 am", masa:"9.15 am", result:{time:"30.98 s", place:"4th in heat", status:"eliminated"}},
+    {acara:416, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.55 am", masa:"11.15 am", cancelled:true},
+    {acara:425, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"3.00 pm", masa:"3.20 pm", cancelled:true},
   ]},
 ];
 
@@ -844,8 +892,15 @@ athletesSorted.forEach((a,i)=>{
       </div>
     </div>`;
     }
-    const resultHtml = e.result ? `
-        <div class="result-note ${e.result.status}">${e.result.status==='advanced' ? '✓ Advanced' : e.result.status==='nomark' ? 'ⓘ Final Result' : '✗ Eliminated'} · ${e.result.time} (${e.result.place})</div>` : '';
+    let resultHtml = '';
+    if(e.result){
+      let label = e.result.status==='advanced' ? '✓ Advanced' : e.result.status==='nomark' ? 'ⓘ Final Result' : e.result.status==='medal' ? '🏅 MEDAL!' : '✗ Eliminated';
+      let extra = e.result.status==='medal' ? '' : ' (' + e.result.place + ')';
+      resultHtml = '<div class="result-note ' + e.result.status + '">' + label + ' · ' + e.result.time + extra + '</div>';
+      if(e.result.status==='medal'){
+        resultHtml += '<div class="result-note medal-detail">' + e.result.place + '</div>';
+      }
+    }
     return `
     <div class="erow">
       <div class="acara-tag">#${e.acara}</div>
