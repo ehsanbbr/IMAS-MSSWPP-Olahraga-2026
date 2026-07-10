@@ -337,6 +337,12 @@
   .rank-table td.st-q{color:#6fd88a;font-weight:700;}
   .rank-table td.st-out{color:var(--grey);}
   .legend-note{font-size:10.5px;color:var(--grey);margin-top:8px;line-height:1.5;}
+  .stage-label{
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;text-transform:uppercase;letter-spacing:.05em;
+    color:var(--gold);margin-top:10px;margin-bottom:2px;
+    border-bottom:1px solid var(--line);padding-bottom:4px;
+  }
   .rrow{
     display:flex;justify-content:space-between;gap:10px;
     padding:8px 10px;margin-top:6px;
@@ -613,49 +619,65 @@
     </div>
 
     <div class="record-card">
-      <h4>200m — P12 (Perempuan 12)</h4>
+      <h4>200m — P12 (Perempuan 12) — Full Results: Heat → Semi → Final</h4>
       <div class="rec-row"><span>All-time MSSWPP Record</span><b>28.07 s — Zara Sofea Binti Mohd Sabidi (SKPP 16(1), 2025)</b></div>
       <div class="rec-row highlight"><span>2026 Champion — NEW RECORD</span><b>28.02 s — Adrina Binti Muhammad Aminuddin (SKPP 14(1))</b></div>
       <p class="info-note">Adrina broke the 2025 meet record in the heats (27.99s) and again in the final (28.02s)!</p>
       <p class="info-note">🥉 <b>IMAS: Kayla won BRONZE!</b> 29.93s (heat, 1st) → 30.30s (semi, 1st) → <b>30.41s (Final, 3rd place)</b>. Qaseh 34.13s — eliminated in heats.</p>
+
+      <div class="stage-label">🏅 FINAL — Top 6</div>
       <table class="rank-table">
-        <thead><tr><th>#</th><th>Bib/Team</th><th>Heat</th><th>Time</th><th>Status</th></tr></thead>
+        <thead><tr><th>Place</th><th>Name / Team</th><th>Heat</th><th>Semi</th><th>Final</th></tr></thead>
         <tbody>
-          <tr><td>1</td><td>Adrina · SKPP 14(1)</td><td>1</td><td>27.99 s</td><td class="st-q">Q · RB</td></tr>
-          <tr><td>2</td><td>Irdina · SKPP 14(1)</td><td>4</td><td>29.12 s</td><td class="st-q">Q</td></tr>
-          <tr class="imas-row"><td>3</td><td>Kayla · IMAS (R)</td><td>6</td><td>29.93 s</td><td class="st-q">Q</td></tr>
-          <tr><td>4</td><td>Syya' Attheara · SKPP 11(2)</td><td>4</td><td>31.18 s</td><td class="st-q">Q</td></tr>
-          <tr><td>5</td><td>Maira Ilda · SKPP 11(2)</td><td>3</td><td>31.22 s</td><td class="st-q">Q</td></tr>
-          <tr><td>6</td><td>Hana Aleesya · SKPP 11(3)</td><td>2</td><td>31.24 s</td><td class="st-q">Q</td></tr>
-          <tr><td>7</td><td>Hanan Fathiyah · SKPP 8(2)</td><td>2</td><td>32.19 s</td><td class="st-q">Q</td></tr>
-          <tr><td>8</td><td>Alya Safiyyah · SKPP 11(1)</td><td>4</td><td>32.26 s</td><td class="st-q">q</td></tr>
-          <tr><td>9</td><td>Ummu Qaireen · SKPP 16(1)</td><td>5</td><td>32.49 s</td><td class="st-q">Q</td></tr>
-          <tr><td>10</td><td>Auniy Nafeesa · SKPP 16(2)</td><td>6</td><td>32.66 s</td><td class="st-q">Q</td></tr>
-          <tr><td>11</td><td>Nik Ariana Sofea · SKPP 11(1)</td><td>5</td><td>32.74 s</td><td class="st-q">Q</td></tr>
-          <tr><td>12</td><td>Dhia Saraa · SKPP 15(1)</td><td>4</td><td>33.08 s</td><td class="st-q">q</td></tr>
-          <tr><td>13</td><td>[..]lan Rabihah · SKPP 18(1)</td><td>5</td><td>33.15 s</td><td class="st-q">q</td></tr>
-          <tr><td>14</td><td>Aleesya Sofea · SKPP 8(1)</td><td>5</td><td>33.26 s</td><td class="st-q">q</td></tr>
-          <tr><td>15</td><td>Nur Dhia Kamelia · SKPP 16(1)</td><td>3</td><td>33.27 s</td><td class="st-q">Q</td></tr>
-          <tr><td>16</td><td>Amni Musfirah · SKPP 9(2)</td><td>1</td><td>33.30 s</td><td class="st-q">Q</td></tr>
-          <tr><td>17</td><td>Nur Amanina · SKPP 5(1)</td><td>6</td><td>33.59 s</td><td class="st-q">q</td></tr>
-          <tr class="divider"><td>18</td><td>Nur Zahrah · SKPP 9(2)</td><td>4</td><td>33.74 s</td><td class="st-q">q</td></tr>
-          <tr><td>19</td><td>Nurfathia Nadhirah · SKPP 11(3)</td><td>6</td><td>33.92 s</td><td class="st-out">—</td></tr>
-          <tr class="imas-row"><td>20</td><td>Qaseh · IMAS (R)</td><td>2</td><td>34.13 s</td><td class="st-out">—</td></tr>
-          <tr><td>21</td><td>Nur Dhiya Arissa · SKPP 18(1)</td><td>6</td><td>34.38 s</td><td class="st-out">—</td></tr>
-          <tr><td>22</td><td>Aisyah Safiya · SKPP 16(2)</td><td>3</td><td>34.56 s</td><td class="st-out">—</td></tr>
-          <tr><td>23</td><td>Afryna Sophea · SKPP 18(2)</td><td>2</td><td>34.85 s</td><td class="st-out">—</td></tr>
-          <tr><td>24</td><td>Nur Sabrina · SKPP 17(1)</td><td>2</td><td>34.94 s</td><td class="st-out">—</td></tr>
-          <tr><td>25</td><td>Nurlaiqah Qaisara · SKPP 15(1)</td><td>5</td><td>35.05 s</td><td class="st-out">—</td></tr>
-          <tr><td>26</td><td>Ayra Dafina · SKPP 9(1)</td><td>5</td><td>35.20 s</td><td class="st-out">—</td></tr>
-          <tr><td>27</td><td>Alya Marissa · SKPP 18(2)</td><td>4</td><td>35.38 s</td><td class="st-out">—</td></tr>
-          <tr><td>28</td><td>Areeqa Kayyisa · SKPP 5(1)</td><td>2</td><td>35.59 s</td><td class="st-out">—</td></tr>
-          <tr><td>29</td><td>Hawra Arya Zara · SKPP 9(1)</td><td>1</td><td>36.03 s</td><td class="st-out">—</td></tr>
-          <tr><td>30</td><td>Zamiah · SKPP 8(3)</td><td>6</td><td>37.62 s</td><td class="st-out">—</td></tr>
-          <tr><td>31</td><td>Sofea Kamarul Ariffin · SKPP 8(1)</td><td>3</td><td>37.66 s</td><td class="st-out">—</td></tr>
-          <tr><td>32</td><td>Shafiyyah Irdina · SKPP 17(1)</td><td>1</td><td>38.62 s</td><td class="st-out">—</td></tr>
-          <tr><td>33</td><td>Nur Umairah Safiah · SKPP 8(3)</td><td>1</td><td>39.01 s</td><td class="st-out">—</td></tr>
-          <tr><td>34</td><td>Noor Aysha Aulia · SIRAJ AIM</td><td>1</td><td>39.89 s</td><td class="st-out">—</td></tr>
-          <tr><td>35</td><td>Nur Aisyah Noor Adli · SIRAJ AIM</td><td>3</td><td>41.26 s</td><td class="st-out">—</td></tr>
+          <tr><td>🥇 1st</td><td>Adrina · SKPP 14(1)</td><td>27.99 s</td><td>28.50 s</td><td class="st-q">28.02 s · RB</td></tr>
+          <tr><td>🥈 2nd</td><td>Irdina · SKPP 14(1)</td><td>29.12 s</td><td>30.23 s</td><td class="st-q">28.77 s</td></tr>
+          <tr class="imas-row"><td>🥉 3rd</td><td>Kayla · IMAS (R)</td><td>29.93 s</td><td>30.30 s</td><td class="st-q">30.41 s</td></tr>
+          <tr><td>4th</td><td>Maira Ilda · SKPP 11(2)</td><td>31.22 s</td><td>31.60 s</td><td>31.27 s</td></tr>
+          <tr><td>5th</td><td>Hana Aleesya · SKPP 11(3)</td><td>31.24 s</td><td>32.25 s</td><td>31.46 s</td></tr>
+          <tr><td>6th</td><td>Syya' Attheara · SKPP 11(2)</td><td>31.18 s</td><td>31.59 s</td><td>32.34 s</td></tr>
+        </tbody>
+      </table>
+
+      <div class="stage-label" style="margin-top:14px;">Reached Semifinal only (7th–18th)</div>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Name / Team</th><th>Heat</th><th>Semi</th></tr></thead>
+        <tbody>
+          <tr><td>7</td><td>Hanan Fathiyah · SKPP 8(2)</td><td>32.19 s</td><td>32.94 s</td></tr>
+          <tr><td>8</td><td>Alya Safiyyah · SKPP 11(1)</td><td>32.26 s</td><td>32.66 s</td></tr>
+          <tr><td>9</td><td>Auniy Nafeesa · SKPP 16(2)</td><td>32.66 s</td><td>32.67 s</td></tr>
+          <tr><td>10</td><td>Nik Ariana Sofea · SKPP 11(1)</td><td>32.74 s</td><td>32.78 s</td></tr>
+          <tr><td>11</td><td>Nur Dhia Kamelia · SKPP 16(1)</td><td>33.27 s</td><td>33.11 s</td></tr>
+          <tr><td>12</td><td>Nur Zahrah · SKPP 9(2)</td><td>33.74 s</td><td>33.71 s</td></tr>
+          <tr><td>13</td><td>Amni Musfirah · SKPP 9(2)</td><td>33.30 s</td><td>33.80 s</td></tr>
+          <tr><td>14</td><td>Nur Amanina · SKPP 5(1)</td><td>33.59 s</td><td>33.81 s</td></tr>
+          <tr><td>15</td><td>Aleesya Sofea · SKPP 8(1)</td><td>33.26 s</td><td>34.23 s</td></tr>
+          <tr><td>16</td><td>Ilan Rabihah · SKPP 18(1)</td><td>33.15 s</td><td>34.42 s</td></tr>
+          <tr><td>17</td><td>Dhia Saraa · SKPP 15(1)</td><td>33.08 s</td><td>34.64 s</td></tr>
+          <tr><td>18</td><td>Ummu Qaireen · SKPP 16(1)</td><td>32.49 s</td><td>DNS</td></tr>
+        </tbody>
+      </table>
+
+      <div class="stage-label" style="margin-top:14px;">Eliminated in Heats only (19th–35th)</div>
+      <table class="rank-table">
+        <thead><tr><th>#</th><th>Name / Team</th><th>Heat</th></tr></thead>
+        <tbody>
+          <tr><td>19</td><td>Nurfathia Nadhirah · SKPP 11(3)</td><td>33.92 s</td></tr>
+          <tr class="imas-row"><td>20</td><td>Qaseh · IMAS (R)</td><td>34.13 s</td></tr>
+          <tr><td>21</td><td>Nur Dhiya Arissa · SKPP 18(1)</td><td>34.38 s</td></tr>
+          <tr><td>22</td><td>Aisyah Safiya · SKPP 16(2)</td><td>34.56 s</td></tr>
+          <tr><td>23</td><td>Afryna Sophea · SKPP 18(2)</td><td>34.85 s</td></tr>
+          <tr><td>24</td><td>Nur Sabrina · SKPP 17(1)</td><td>34.94 s</td></tr>
+          <tr><td>25</td><td>Nurlaiqah Qaisara · SKPP 15(1)</td><td>35.05 s</td></tr>
+          <tr><td>26</td><td>Ayra Dafina · SKPP 9(1)</td><td>35.20 s</td></tr>
+          <tr><td>27</td><td>Alya Marissa · SKPP 18(2)</td><td>35.38 s</td></tr>
+          <tr><td>28</td><td>Areeqa Kayyisa · SKPP 5(1)</td><td>35.59 s</td></tr>
+          <tr><td>29</td><td>Hawra Arya Zara · SKPP 9(1)</td><td>36.03 s</td></tr>
+          <tr><td>30</td><td>Zamiah · SKPP 8(3)</td><td>37.62 s</td></tr>
+          <tr><td>31</td><td>Sofea Kamarul Ariffin · SKPP 8(1)</td><td>37.66 s</td></tr>
+          <tr><td>32</td><td>Shafiyyah Irdina · SKPP 17(1)</td><td>38.62 s</td></tr>
+          <tr><td>33</td><td>Nur Umairah Safiah · SKPP 8(3)</td><td>39.01 s</td></tr>
+          <tr><td>34</td><td>Noor Aysha Aulia · SIRAJ AIM</td><td>39.89 s</td></tr>
+          <tr><td>35</td><td>Nur Aisyah Noor Adli · SIRAJ AIM</td><td>41.26 s</td></tr>
         </tbody>
       </table>
       <div class="legend-note">12 automatic qualifiers (2 per heat, Q) + 6 fastest-losers (q) = 18 advance to semifinal #415. Kayla qualified directly as heat winner; Qaseh missed the cutoff by 0.39s.</div>
@@ -706,9 +728,29 @@
       <div class="legend-note">12 automatic qualifiers (2 per heat, Q — including heat winners like M-003 regardless of overall time rank) + 6 fastest-losers (q) = 18 advance to semifinal #416. Syed Adam missed the cutoff by 0.71s.</div>
     </div>
 
-    <div class="record-card" style="opacity:0.7;">
-      <h4>1200m (P12)</h4>
-      <p class="info-note">Not yet contested as of the sheets shared so far. We'll add records and this year's leading marks here once those results come in.</p>
+    <div class="record-card">
+      <h4>1200m — P12 (Perempuan 12) — Final Results</h4>
+      <div class="rec-row"><span>All-time MSSWPP Record</span><b>Not available from sheets shared</b></div>
+      <div class="rec-row highlight"><span>🥇 2026 Champion</span><b>4:29.10 — Kayla Ammara Mohd Shahsirin Akbar (IMAS)</b></div>
+      <p class="info-note">🥇 <b>IMAS: Kayla won GOLD!</b> She led the entire 13-runner field, finishing over 13 seconds ahead of 2nd place.</p>
+      <table class="rank-table">
+        <thead><tr><th>Place</th><th>Name / Team</th><th>Time</th></tr></thead>
+        <tbody>
+          <tr class="imas-row"><td>🥇 1st</td><td>Kayla · IMAS (R)</td><td>4:29.10</td></tr>
+          <tr><td>2nd</td><td>Nur Amni Husna · SKPP 14(1)</td><td>4:42.93</td></tr>
+          <tr><td>3rd</td><td>Puteri Zahra Raihana · SKPP 11(3)</td><td>4:47.07</td></tr>
+          <tr><td>4th</td><td>Nur Iman Ayesha · SKPP 15(1)</td><td>4:56.26</td></tr>
+          <tr><td>5th</td><td>Amrina Rosyada · SKPP 16(1)</td><td>5:03.06</td></tr>
+          <tr><td>6th</td><td>Dhiyaa Zara Deena · SKPP 11(2)</td><td>5:10.53</td></tr>
+          <tr><td>7th</td><td>Izz Safa Adnin · SKPP 11(1)</td><td>5:18.19</td></tr>
+          <tr><td>8th</td><td>Nur Adyra Azzahra · SKPP 5(1)</td><td>5:20.43</td></tr>
+          <tr><td>9th</td><td>Nik Nur Zara Rania · SKPP 9(2)</td><td>5:24.69</td></tr>
+          <tr><td>10th</td><td>Qayla Irsaleena Milliyya · SKPP 17(1)</td><td>5:37.50</td></tr>
+          <tr><td>11th</td><td>Nur Izz Zara Adelia · SKPP 8(1)</td><td>5:40.23</td></tr>
+          <tr><td>12th</td><td>Noor Aysha Aulia · SIRAJ AIM</td><td>5:43.93</td></tr>
+          <tr><td>13th</td><td>Aimi Hadfina · SKPP 8(3)</td><td>6:50.57</td></tr>
+        </tbody>
+      </table>
     </div>
   </div>
 
@@ -837,7 +879,7 @@ const athletes = [
     {acara:406, day:3, event:"200 Meter", round:"heat", roundLabel:"Saringan", lapor:"8.40 am", masa:"9.00 am", result:{time:"29.93 s", place:"1st in heat", status:"advanced"}},
     {acara:415, day:3, event:"200 Meter", round:"semi", roundLabel:"Sep.Akhir", lapor:"10.40 am", masa:"11.00 am", result:{time:"30.30 s", place:"1st in semi", status:"advanced"}},
     {acara:424, day:3, event:"200 Meter", round:"final", roundLabel:"Akhir", lapor:"2.30 pm", masa:"2.50 pm", result:{time:"30.41 s", place:"🥉 3rd place — BRONZE MEDAL", status:"medal"}},
-    {acara:504, day:4, event:"1200 Meter", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am"},
+    {acara:504, day:4, event:"1200 Meter", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"4:29.10", place:"1st place — GOLD MEDAL", status:"medal"}},
   ]},
   { name:"Najla", cat:"P12", events:[
     {acara:104, day:0, event:"Lompat Tinggi (High Jump)", round:"final", roundLabel:"Akhir", lapor:"8.10 am", masa:"8.30 am", result:{time:"NM", place:"No mark recorded", status:"nomark"}},
